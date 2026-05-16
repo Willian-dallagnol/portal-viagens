@@ -1,0 +1,83 @@
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  width: 260px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.25s;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(25, 118, 210, 0.16);
+  transform: translateY(-4px);
+}
+
+.imagemWrapper {
+  position: relative;
+  width: 100%;
+  height: 160px;
+}
+
+.imagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.favBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid #1976d2;
+  background: #fff;
+  color: #1976d2;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+.favBtn:hover,
+.favAtivo {
+  background: #1976d2;
+  color: #fff;
+}
+
+.corpo {
+  padding: 14px 16px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.nome {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1976d2;
+  margin: 0;
+}
+
+.estado {
+  font-size: 0.8rem;
+  color: #888;
+  font-weight: 500;
+  background: #f0f4fa;
+  padding: 2px 8px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
